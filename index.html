@@ -3,6 +3,7 @@
   <head>
     <link rel="stylesheet" href="src/style.css" />
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AI Poem Generator</title>
@@ -17,13 +18,12 @@
         <form id="poem-generator-form">
           <input
             type="text"
-            name=""
-            id=""
             placeholder="Enter the topic of your poem."
             autofocus
             required
             autocomplete="off"
             class="prompt"
+            id="user-prompt"
           />
           <input class="submitButton" type="submit" />
         </form>
