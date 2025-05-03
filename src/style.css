@@ -23,16 +23,23 @@ main {
 a {
   color: slateblue;
 }
-
-form {
-  padding: 30px;
+.form-container {
+  padding: 15px 20px;
   background-color: white;
   border-radius: 10px;
-  display: flex;
   box-shadow: 0px 20px 60px lightgray;
   margin-bottom: 30px;
 }
 
+form {
+  display: flex;
+}
+.hint {
+  line-height: 1.5;
+  margin-top: 5px;
+  font-size: 12px;
+  opacity: 0.6;
+}
 .prompt {
   padding: 16px;
   border: 1px solid grey;
@@ -59,6 +66,9 @@ form {
   line-height: 2;
   box-shadow: 0px 20px 60px lightgray;
   border-radius: 10px;
+}
+.hidden {
+  display: none;
 }
 footer {
   text-align: center;

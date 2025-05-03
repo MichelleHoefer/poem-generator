@@ -15,20 +15,24 @@
       </header>
 
       <main>
-        <form id="poem-generator-form">
-          <input
-            type="text"
-            placeholder="Enter the topic of your poem."
-            autofocus
-            required
-            autocomplete="off"
-            class="prompt"
-            id="user-prompt"
-          />
-          <input class="submitButton" type="submit" />
-        </form>
-
-        <div class="poem" id="poem"></div>
+        <div class="form-container">
+          <form id="poem-generator-form">
+            <input
+              type="text"
+              placeholder="What would you like a poem about? Write here."
+              autofocus
+              required
+              autocomplete="off"
+              class="prompt"
+              id="user-prompt"
+            />
+            <input class="submitButton" type="submit" />
+          </form>
+          <div class="hint">
+            Pick any topic that you like. AI doesn't judge.
+          </div>
+        </div>
+        <div class="poem hidden" id="poem">Your poem will appear here</div>
       </main>
 
       <footer>
